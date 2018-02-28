@@ -29,6 +29,7 @@ $(function() {
             allFeeds.forEach(function(item) {
                 // url
                 expect(item.url).not.toBeNull();
+                expect(item.url).toBeTruthy();
             });
           });
 
@@ -39,6 +40,7 @@ $(function() {
             allFeeds.forEach(function(item) {
                 // name
                 expect(item.name).not.toBeNull();
+                expect(item.name).toBeTruthy();
             });
           });
     });
