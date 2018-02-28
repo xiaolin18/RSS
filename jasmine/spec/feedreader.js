@@ -84,9 +84,7 @@ $(function() {
        */
       //测试异步调用时done参数
       beforeEach(function(done) {
-          loadFeed(0, function() {
-              done();
-          });
+          loadFeed(0, done);
       }, 10000);
 
       it("loadFeed function is well", function() {
